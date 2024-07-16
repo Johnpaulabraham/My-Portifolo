@@ -201,37 +201,37 @@ nav .hambuggar {
 }
 
 #skills-div .skills-text {
-    width: 50%;
-    min-height: 5vh;
-    text-align: center;
+    width: 100%;
+    height: 20vh;
+    margin: 20px 0px;
+    justify-content: left;
 }
 
 #skills-div .skills-text p {
-    text-align: center;
+    text-align: left;
 }
 
 #skills-div .skills-text h2 {
     font-size: 2rem;
     font-weight: 700;
     line-height:50px;
-    text-align: center;
+    text-align: left;
 }
 
 #skills-div .skill-list {
     width: 100%;
-    min-height: 100%;
+    min-height: 880%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    padding: 25px;
+    padding: 0 35px;
 }
 
 .skill-list .s-card {
     background: #f5fcff;
-    width: 100%;
+    width: 30%;
     min-height: 200px;
     padding: 0px;
-    gap: 32px;
     border-radius: 10px;
     border: 0px 0px 4px 0px;
     display: flex;
@@ -505,6 +505,12 @@ nav .hambuggar {
     padding: 0px 60px;
 }
 
+#footer-div .fd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #footer-div .footer-nav {
     display: flex;
     justify-content: center;
@@ -718,29 +724,231 @@ header #navbar {
 }
 
 #skills-div .skill-list {
-    width: 100%;
-    min-height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    width: 80%;
+    min-height: 50%;
     padding: 25px;
 }
 
 .skill-list .s-card {
     background: #f5fcff;
-    width: 100%;
+    width: 40%;
     min-height: 200px;
     padding: 0px;
-    gap: 32px;
+    gap: 20px;
     border-radius: 10px;
     border: 0px 0px 4px 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#skills-div .s-card img {
+    width: 6rem;
+}
+/* Skill Styling End */
+
+
+/* About us Styling */
+#about-div {
+    width: 100%;
+    min-height: 70vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+#about-div .about-image {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#about-div .about-image img {
+    width: 20rem;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#about-div .about-text {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 30px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justify;
+}
+/* About us Styling End */
+
+
+
+/* Contact Me Styling Start */
+#contact {
+    width: 100%;
+    min-height: 70vh;
+    padding: 50px 0px;
+    /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#contact .contact-text {
+    width: 100%;
+    min-height: 100px;
+    gap: 22px;
+    padding: 15px;
+    text-align: center;
+}
+
+#contact .contact-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+#contact form {
+    width: 95%;
+    min-height: 70vh;
+    padding: 20px;
+    margin: 20px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/customer\ me.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#skills-div .s-card img {
-    width: 8rem;
+#contact form section div label {
+    color: white;
+
 }
-/* Skill Styling End */
+
+#contact form section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#contact form .dif-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact form select {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#contact form textarea {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#contact form button {
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+#contact form button:hover {
+    background-color: #1092c9;
+}
+/* Contact Me Styling End */
+
+
+/* Footer Styling */
+#footer-div {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    gap: 15px;
+}
+
+#footer-div .fd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-div .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+#footer-div .footer-nav p {
+    font-size: 0.9rem;
+}
+
+#footer-div a {
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#footer-div a {
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    color: black;
+}
+/* Footer Styling End */
