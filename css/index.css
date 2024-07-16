@@ -620,7 +620,7 @@ header #navbar {
 
 .hero-text h1 {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     line-height: 80px;
     text-align: center;
@@ -636,7 +636,7 @@ header #navbar {
 
 .hero-text .linktree {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     color: white;
     order: 1;
 }
