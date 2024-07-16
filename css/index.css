@@ -190,40 +190,47 @@ nav .hambuggar {
 /* My Skills Styling */
 #skills-div {
     max-width: 1440px;
-    min-height: 100vh;
-    padding: 50px 85px;
+    min-height: 80vh;
+    padding: 50px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
     margin: 0 auto;
 }
 
 #skills-div .skills-text {
     width: 50%;
-    min-height: 20vh;
+    min-height: 5vh;
+    text-align: center;
+}
+
+#skills-div .skills-text p {
+    text-align: center;
 }
 
 #skills-div .skills-text h2 {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 75px;
+    line-height:50px;
+    text-align: center;
 }
 
 #skills-div .skill-list {
     width: 100%;
-    min-height: 300px;
+    min-height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 40px;
+    padding: 25px;
 }
 
 .skill-list .s-card {
     background: #f5fcff;
-    width: 250px;
+    width: 100%;
     min-height: 200px;
-    padding: 20px;
+    padding: 0px;
     gap: 32px;
     border-radius: 10px;
     border: 0px 0px 4px 0px;
@@ -233,8 +240,8 @@ nav .hambuggar {
     align-items: center;
 }
 
-#skills-div img {
-    width: 10rem;
+#skills-div .s-card img {
+    width: 8rem;
 }
 /* Skill Styling End */
 
@@ -548,12 +555,12 @@ header #navbar {
 }
 
 #navbar img, footer img {
-    width: 8rem;
-    height: 4rem;
+    width: 7rem;
+    height: 3.5rem;
 }
 
 #navbar h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -573,7 +580,7 @@ header #navbar {
 }
 
 #navbar li a:hover {
-    color: ##1092c9;
+    color: #1092c9;
 }
 
 #navbar .mailto {
@@ -638,7 +645,6 @@ header #navbar {
     display: flex;
     gap: 20px;
     color: white;
-    order: 1;
 }
 
 .hero-text .linktree i {
@@ -671,13 +677,70 @@ header #navbar {
     justify-content: center;
     align-items: center;
     padding: 20px;
-
 }
 
 #hero .hero-image img {
-    width: 100%;
+    min-width: 24rem;
     height: auto;
-    border-radius: 30px;
+    border-radius: 0px;
 }
 /* Hero Styling End */
 }
+
+/* My Skills Styling */
+#skills-div {
+    width: 100%;
+    min-height: 80vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#skills-div .skills-text {
+    width: 50%;
+    min-height: 5vh;
+    text-align: center;
+}
+
+#skills-div .skills-text p {
+    text-align: center;
+}
+
+#skills-div .skills-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height:50px;
+    text-align: center;
+}
+
+#skills-div .skill-list {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 25px;
+}
+
+.skill-list .s-card {
+    background: #f5fcff;
+    width: 100%;
+    min-height: 200px;
+    padding: 0px;
+    gap: 32px;
+    border-radius: 10px;
+    border: 0px 0px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills-div .s-card img {
+    width: 8rem;
+}
+/* Skill Styling End */
