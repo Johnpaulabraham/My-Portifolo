@@ -52,6 +52,7 @@ header #navbar {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 #navbar img, footer img {
@@ -80,7 +81,7 @@ header #navbar {
 }
 
 #navbar li a:hover {
-    color: #1092c9;
+    color: #afdaee;
 }
 
 #navbar i {
@@ -100,7 +101,7 @@ nav .hambuggar {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    min-height: 300px;
+    min-height: 80vh;
     padding: 0 100px;
     display: flex;
     align-items: center;
@@ -109,12 +110,13 @@ nav .hambuggar {
 }
 
 #hero .hero-text {
-    min-width: 30%;
-    min-height: 70%;
+    min-width: 50%;
+    height: 100%;
     gap: 32px;
     text-align: left;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
 }
@@ -131,35 +133,44 @@ nav .hambuggar {
     text-align: left;
 }
 
+.hero-text p {
+    color: white;
+    width: 80%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
 .hero-text .linktree {
     display: flex;
     gap: 30px;
+    color: white;
 }
 
 .hero-text .linktree i {
     font-size: 1.5rem;
-    color: black;
+    color: white;
 }
 
 .hero-text .btn1 {
     width: 150px;
     height: 50px;
-    background-color: black;
     border: 1px solid white;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     font-size: 1.1rem;
+    border: none;
+    background-color: black;
+    transition: background-color 0.6s ease;
 }
 
 .hero-text .btn1:hover {
     background-color: #1092c9;
-
 }
 
 #hero .hero-image {
-    width: 60%;
-    min-height: 525px;
+    width: 50%;
+    height: 100%;
     gap: 32px;
     display: flex;
     justify-content: center;
@@ -173,7 +184,6 @@ nav .hambuggar {
     height: auto;
     border-radius: 30px;
 }
-
 /* Hero Styling End */
 
 
@@ -513,7 +523,8 @@ nav .hambuggar {
 
 
 /* RESPONSIVINESS STYLING */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
     /* Header Styling Start */
 header {
     max-width: 100%;
@@ -575,4 +586,98 @@ header #navbar {
     color: #1092c9;
 }
 /* Header Styling End */
+
+/* Hero Section Start */
+#hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url('../image/background.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+#hero .hero-text {
+    min-width: 50%;
+    height: 100%;
+    gap: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: white;
+}
+
+.hero-text h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+}
+
+.hero-text p {
+    color: white;
+    width: 80%;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.hero-text .linktree {
+    display: flex;
+    gap: 30px;
+    color: white;
+    order: 1;
+}
+
+.hero-text .linktree i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.hero-text .btn1 {
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    background-color: black;
+    transition: background-color 0.6s ease;
+}
+
+.hero-text .btn1:hover {
+    background-color: #1092c9;
+}
+
+#hero .hero-image {
+    width: 50%;
+    height: 100%;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#hero .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+/* Hero Styling End */
 }
