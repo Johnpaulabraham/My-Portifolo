@@ -10,7 +10,7 @@
 }
 
 span {
-    color: #7009f2;
+    color: #1092c9;
 }
 
 p {
@@ -55,11 +55,10 @@ header #navbar {
 }
 
 #navbar img, footer img {
-    width: 6rem;
-    height: 4rem;
+    width: 4rem;
 }
 
-#navbar h1 {
+#navbar h2 {
     font-weight: 700;
 }
 
@@ -81,12 +80,12 @@ header #navbar {
 }
 
 #navbar li a:hover {
-    color: #7009f2;
+    color: #1092c9;
 }
 
 #navbar i {
     font-size: 1.8rem;
-    color: #7009f2;
+    color: #1092c9;
 }
 
 nav .hambuggar {
@@ -97,10 +96,12 @@ nav .hambuggar {
 
 /* Hero Section Start */
 #hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url('../image/background.jpg');
+    background-position: center;
+    background-size: cover;
     max-width: 1440px;
-    min-height: 50vh;
+    min-height: 300px;
     padding: 0 100px;
-    background-color: #f5fcff;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -118,10 +119,14 @@ nav .hambuggar {
     padding: 20px;
 }
 
+.hero-text h2 {
+    color: white;
+}
+
 .hero-text h1 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 5rem;
-    color: #282938;
+    color: white;
     line-height: 80px;
     text-align: left;
 }
@@ -148,7 +153,8 @@ nav .hambuggar {
 }
 
 .hero-text .btn1:hover {
-    background-color: #7009f2;
+    background-color: #1092c9;
+
 }
 
 #hero .hero-image {
@@ -330,7 +336,8 @@ nav .hambuggar {
 }
 
 .project-list button:hover {
-    background-color: #7009f2;
+    background-color: #1092c9;
+
 }
 /* Project Styling End */
 
@@ -466,7 +473,7 @@ nav .hambuggar {
 }
 
 #contact form button:hover {
-    background-color: #7009f2;
+    background-color: #1092c9;
 }
 /* Contact Me Styling End */
 
@@ -555,7 +562,7 @@ header #navbar {
 }
 
 #navbar li a:hover {
-    color: #7009f2;
+    color: ##1092c9;
 }
 
 #navbar .mailto {
@@ -565,7 +572,7 @@ header #navbar {
 #navbar .hambuggar {
     display: inline;
     font-size: 1.8rem;
-    color: #7009f2;
+    color: #1092c9;
 }
 /* Header Styling End */
 }
