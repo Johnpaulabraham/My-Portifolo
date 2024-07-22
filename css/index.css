@@ -560,15 +560,15 @@ nav .hambuggar {
         width: 100%;
         min-height: 50px;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
-        gap: 100px;
+        gap: 10px;
     }
 
     #navbar .brand {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
         cursor: pointer;
     }
 
