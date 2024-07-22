@@ -85,6 +85,7 @@ header #navbar {
 nav .hambuggar {
     display: none;
 }
+
 /* Header Styling End */
 
 
@@ -121,7 +122,7 @@ nav .hambuggar {
 }
 
 .hero-text h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
     color: white;
     /* line-height: 100px; */
     text-align: left;
@@ -177,6 +178,7 @@ nav .hambuggar {
     border-radius: 30px;
     /* position: relative; */
 }
+
 /* Hero Styling End */
 
 
@@ -206,7 +208,7 @@ nav .hambuggar {
 #skills-div .skills-text h2 {
     font-size: 2rem;
     font-weight: 700;
-    line-height:50px;
+    line-height: 50px;
     text-align: left;
 }
 
@@ -232,6 +234,7 @@ nav .hambuggar {
 #skills-div .s-card img {
     width: 8rem;
 }
+
 /* Skill Styling End */
 
 
@@ -282,6 +285,7 @@ nav .hambuggar {
     line-height: 30px;
     text-align: justify;
 }
+
 /* About us Styling End */
 
 
@@ -314,8 +318,9 @@ nav .hambuggar {
     min-height: 100px;
     border-radius: 18px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .project-list .project-card {
@@ -323,7 +328,22 @@ nav .hambuggar {
     min-height: 100px;
     margin: 10px;
     box-shadow: 10px 10px 20px black;
+    /* /* display: flex; */
+    flex-direction: column;
 }
+
+.project-list .gp-1 {
+    order: 0;
+}
+
+.project-list .gp-2 {
+    order: 1;
+}
+
+.project-list .gp-3 {
+    order: 2;
+}
+
 
 .pj-image img {
     width: 100%;
@@ -354,6 +374,7 @@ nav .hambuggar {
 .project-list button:hover {
     background-color: #1092c9;
 }
+
 /* Project Styling End */
 
 
@@ -386,6 +407,7 @@ nav .hambuggar {
     min-width: 900px;
     min-height: 300px;
 }
+
 /* Experience Styling End */
 
 
@@ -476,6 +498,7 @@ nav .hambuggar {
 #contact form button:hover {
     background-color: #1092c9;
 }
+
 /* Contact Me Styling End */
 
 
@@ -489,7 +512,7 @@ nav .hambuggar {
     padding: 0px 50px;
 }
 
-#footer-div h2{
+#footer-div h2 {
     display: flex;
 }
 
@@ -504,11 +527,533 @@ nav .hambuggar {
 #footer-div .footer-nav p {
     font-size: 0.95rem;
 }
- 
+
 #footer-div a {
     display: flex;
     gap: 30px;
     text-decoration: none;
     color: black;
 }
+
 /* Footer Styling End */
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVINESS */
+@media screen and (max-width: 767px) {
+
+    /* Header Styling Start */
+    header {
+        width: 100%;
+        min-height: 50px;
+        background-color: #ffffff;
+    }
+
+    header #navbar {
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #navbar .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #navbar img {
+        display: none;
+    }
+
+    #navbar h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar li {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #navbar li a:hover {
+        color: #afdaee;
+    }
+
+    #navbar .mailto {
+        display: block;
+    }
+
+    nav .hambuggar {
+        display: block;
+    }
+
+    /* Header Styling End */
+
+    /* Hero Section Start */
+    #hero {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url('../image/background.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 200px;
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #hero .hero-text {
+        width: 100%;
+        min-height: 100px;
+        gap: 35px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+    }
+
+    .hero-text p {
+        color: white;
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 25px;
+        padding: 10px;
+    }
+
+    .hero-text .linktree {
+        display: flex;
+        gap: 35px;
+        color: white;
+    }
+
+    .hero-text .linktree i {
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+    }
+
+    .hero-text .btn1 {
+        width: 150px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 1.1rem;
+        border: none;
+        background-color: black;
+        transition: background-color 0.6s ease;
+    }
+
+    .hero-text .btn1:hover {
+        background-color: #1092c9;
+    }
+
+    #hero .hero-image {
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 20px;
+    }
+
+    #hero .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+    /* Hero Styling End */
+
+
+    /* My Skills Styling */
+    #skills-div {
+        width: 100%;
+        min-height: 100px;
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    #skills-div .skills-text {
+        width: 100%;
+        min-height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skills-div .skills-text p {
+        text-align: center;
+    }
+
+    #skills-div .skills-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    #skills-div .skill-list {
+        width: 100%;
+        min-height: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 10px 0px;
+    }
+
+    .skill-list .s-card {
+        width: 150px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #skills-div .s-card img {
+        width: 8rem;
+    }
+    /* Skill Styling End */
+
+
+    /* About us Styling */
+    #about-div {
+        width: 100%;
+        min-height: 100px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        background-color: #eff2f3;
+    }
+
+    #about-div .about-image {
+        width: 100%;
+        min-height: 50px;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-div .about-image img {
+        width: 80%;
+        min-height: 50px;
+        
+    }
+
+    #about-div .about-text {
+        width: 100%;
+        min-height: 100px;
+        justify-content: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 55px;
+    }
+
+    .about-text p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: justify;
+    }
+    /* About us Styling End */
+
+
+    /* My Project Styling */
+    #project-div {
+        width: 100%;
+        min-height: 100px;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    #project-div .project-text {
+        width: 100%;
+        min-height: 50px;
+        text-align: center;
+    }
+
+    #project-div .project-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 75px;
+    }
+
+    #project-div .project-list {
+        width: 100%;
+        min-height: 100px;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project-list .project-card {
+        width: 350px;
+        min-height: 100px;
+        margin: 10px;
+        box-shadow: 10px 10px 20px black;
+        flex-direction: column;
+    }
+
+    .project-list .gp-1 {
+        order: 0;
+    }
+
+    .project-list .gp-2 {
+        order: 1;
+    }
+
+    .project-list .gp-3 {
+        order: 2;
+    }
+
+
+    .pj-image img {
+        width: 100%;
+    }
+
+    .project-card .pj-image-text {
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .project-list button {
+        width: 140px;
+        height: 40px;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+
+    .project-list button:hover {
+        background-color: #1092c9;
+    }
+    /* Project Styling End */
+
+
+    /* Experience Styling */
+    #experience {
+        max-width: 1440px;
+        min-height: 150px;
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 15px;
+        margin: 0 auto;
+        background-color: #e5e5e6;
+    }
+
+    #experience .experience-text {
+        width: 50%;
+        height: auto;
+    }
+
+    #experience .experience-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 75px;
+    }
+
+    #experience .experience-list {
+        min-width: 900px;
+        min-height: 300px;
+    }
+
+    /* Experience Styling End */
+
+
+    /* Contact Me Styling Start */
+    #contact {
+        width: 100%;
+        min-height: 100px;
+        padding: 30px 0px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .contact-text {
+        max-width: 800px;
+        height: auto;
+        gap: 22px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #contact .contact-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 75px;
+    }
+
+    #contact form {
+        width: 100%;
+        min-height: 200px;
+        padding: 20px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/customer\ me.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact form label {
+        color: white;
+
+    }
+
+    #contact form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    #contact form input {
+        min-width: 350px;
+        min-height: 50px;
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #contact form textarea {
+        min-width: 350px;
+        min-height: 50px;
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #contact form button {
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+
+    #contact form button:hover {
+        background-color: #1092c9;
+    }
+    /* Contact Me Styling End */
+
+
+    /* Footer Styling */
+    #footer-div {
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+        gap: 20px;
+    }
+
+    #footer-div h2 {
+        display: none;
+    }
+
+    #footer-div .footer-nav {
+        display: none;
+        /* justify-content: center;
+        align-items: center;
+        gap: 15px;
+        color: black; */
+    }
+
+    #footer-div .footer-nav p {
+        /* font-size: 0.95rem; */
+        display: none;
+    }
+
+    #footer-div a {
+        display: flex;
+        gap: 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Footer Styling End */
+}
