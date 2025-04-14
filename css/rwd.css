@@ -16,6 +16,12 @@
 		width: 100%;
 		min-height: 60px;
 		padding: 10px 20px;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		margin: 0 auto;
 	}
 
 	header #navbar {
@@ -223,6 +229,7 @@
 	#about-div .about-section1 p {
 		margin-bottom: 15px;
 		color: #666666;
+		text-align: left;
 	}
 
 	#about-div .about-section2 h3 {
@@ -286,7 +293,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 0px 0px;
+		margin: 35px 0px;
 		padding: 10px 20px;
 	}
 
@@ -343,13 +350,14 @@
 	#contact .contact-heading p {
 		font-size: 20px;
 		max-width: 800px;
+		padding: 0 30px;
 		/* text-align: center; */
 		margin: 0 auto;
 	}
 
 	#contact .container {
-		width: 60%;
-		min-height: 200px;
+		width: 90%;
+		min-height: 400px;
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
@@ -361,11 +369,7 @@
 	}
 
 	#contact form {
-		/* margin: 50px; */
-		/* width: 60%; */
-		/* display: flex; */
 		gap: 25px;
-		/* padding: 0 100px; */
 	}
 
 	#contact form label {
@@ -378,7 +382,7 @@
 	}
 
 	#contact form input {
-		min-width: 740px;
+		min-width: 100%;
 		height: 60px;
 		padding: 25px;
 		font-size: 1rem;
@@ -390,7 +394,6 @@
 	}
 
 	#contact form textarea {
-		min-width: 740px;
 		height: 200px;
 		padding: 10px;
 		font-size: 1rem;
