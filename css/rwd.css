@@ -90,7 +90,7 @@
 		background-position: right;
 		background-size: cover;
 		width: 100%;
-		max-height: 100vh;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
@@ -407,6 +407,7 @@
 	form button {
 		margin-bottom: 25px;
 	}
+
 	/* Contact Me Styling End */
 
 	/* Footer Styling */

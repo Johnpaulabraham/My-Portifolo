@@ -19,6 +19,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		/>
+		<link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
 		<link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
 	</head>
 
@@ -285,7 +286,7 @@
 			</div>
 
 			<div class="container">
-				<form action="#" method="post">
+				<form action="#" id="contact-form">
 					<div class="first-name name">
 						<label for="fname">Name</label>
 						<input
@@ -300,7 +301,7 @@
 						<label for="email">Email</label>
 						<input
 							type="email"
-							name="fname"
+							name="email"
 							id="email"
 							placeholder="Enter your Email"
 						/>
@@ -315,8 +316,12 @@
 						></textarea>
 					</div>
 					<a href="#"
-						><button type="button" class="button-long">Submit</button></a
+						><button type="submit" class="button-long">Submit</button></a
 					>
+					<div class="loader">
+						<i class="lni lni-spinner-3"></i>
+					</div>
+					<div class="form-message"></div>
 				</form>
 			</div>
 		</div>
@@ -390,5 +395,11 @@
 			</div>
 		</footer>
 		<!-- Footer Section End-->
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>

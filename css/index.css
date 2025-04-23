@@ -451,6 +451,59 @@ nav .hambuggar {
 form button {
 	margin-bottom: 25px;
 }
+
+.loader {
+	width: 100%;
+	padding: 10px;
+	background-color: #3d4145;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 600;
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.loader i {
+	color: white;
+	animation: rotateme 0.6s linear infinite;
+}
+
+/* This is to rotate the Loader Animation */
+@keyframes rotateme {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.form-message {
+	display: none;
+	width: 100%;
+	background-color: #3d4145;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.show {
+	display: block;
+}
+
+.success-msg {
+	color: green;
+	line-height: 3;
+}
+
+.error-msg {
+	color: red;
+	line-height: 3;
+}
 /* Contact Me Styling End */
 
 /* Footer Styling */
