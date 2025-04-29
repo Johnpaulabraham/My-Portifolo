@@ -1,3 +1,15 @@
+// HAMBUGAR MENU
+function showSidebar() {
+	const sidebar = document.querySelector(".sidebar");
+	sidebar.style.display = "flex";
+}
+
+function hideSidebar() {
+	const sidebar = document.querySelector(".sidebar");
+	sidebar.style.display = "none";
+}
+
+// EMAIL.JS CONTACT
 (function () {
 	// https://dashboard.emailjs.com/admin/account
 	emailjs.init({

@@ -13,8 +13,7 @@
 		/>
 		<meta name="author" content="Johnpaul Abraham" />
 		<title>Johnpaul | Frontend Developer</title>
-		<link rel="stylesheet" href="./css/index.css" />
-		<link rel="stylesheet" href="./css/rwd.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -26,24 +25,37 @@
 	<body>
 		<!-- Header Section Start-->
 		<header>
-			<nav id="navbar">
-				<div class="brand">
-					<img
-						src="./image/favicon.png"
-						alt="Johnpaul Profile Image"
-						title="Johnpaul - Developer"
-					/>
-					<h2>Johnpaul Abraham</h2>
-				</div>
-				<div class="navList">
-					<ul>
-						<li><a href="#hero">Home</a></li>
-						<li><a href="#about-div">About</a></li>
-						<li><a href="#projects-div">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<i class="fa-solid fa-bars hambuggar"></i>
+			<nav>
+				<ul class="sidebar">
+					<li onclick="hideSidebar()">
+						<a href="#"><img src="./image/ham-menu-close.svg" /></a>
+					</li>
+					<li><a href="#hero">Home</a></li>
+					<li><a href="#about-div">About</a></li>
+					<li><a href="#projects-div">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+				<ul>
+					<li>
+						<a href="#hero" style="background-color: white"
+							><img
+								src="./image/favicon.png"
+								alt="Johnpaul Profile Image"
+								title="Johnpaul - Developer"
+								style="width: 40px"
+							/>
+							<h3>Johnpaul A.</h3></a
+						>
+					</li>
+					<li class="hideonMobile"><a href="#hero">Home</a></li>
+					<li class="hideonMobile"><a href="#about-div">About</a></li>
+					<li class="hideonMobile"><a href="#projects-div">Projects</a></li>
+					<li class="hideonMobile"><a href="#contact">Contact</a></li>
+					<li class="menu-button" onclick="showSidebar()">
+						<a href="#"><img src="./image/ham-menu-open.svg" /></a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 		<!-- Header Section End -->
@@ -70,6 +82,8 @@
 					>
 						<i class="fa-brands fa-linkedin"></i>
 					</a>
+				</span>
+				<span>
 					<a
 						target="_blank"
 						title="Twitter"
@@ -77,6 +91,8 @@
 					>
 						<i class="fa-brands fa-x-twitter"></i>
 					</a>
+				</span>
+				<span>
 					<a
 						target="_blank"
 						title="Instagram"
@@ -84,6 +100,8 @@
 					>
 						<i class="fa-brands fa-instagram"></i>
 					</a>
+				</span>
+				<span>
 					<a
 						target="_blank"
 						title="Github"
@@ -91,8 +109,8 @@
 					>
 						<i class="fa-brands fa-github"></i>
 					</a>
-					<!-- <a target="_blank" title="freeCodeCamp" href="https://www.freecodecamp.org/Johnpaulabraham">
-                    <i class="fa-brands fa-free-code-camp"></i></a> -->
+				</span>
+				<span>
 					<a
 						target="_blank"
 						title="My Resume"
